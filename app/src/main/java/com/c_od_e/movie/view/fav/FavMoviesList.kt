@@ -1,6 +1,7 @@
-package com.c_od_e.movie.view.settings
+package com.c_od_e.movie.view.fav
 
-
+import android.content.Context
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,8 +10,6 @@ import android.view.ViewGroup
 
 import com.c_od_e.movie.R
 
-
-class SettingsFragment : Fragment(R.layout.fragment_settings) {
-
+class FavMoviesList : Fragment(R.layout.fragment_fav_movies_list) {
 
 }

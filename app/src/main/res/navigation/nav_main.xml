@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/navigation_search">
 
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.c_od_e.movie.view.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.c_od_e.movie.view.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.c_od_e.movie.view.details.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/navigation_fav"
+        android:name="com.c_od_e.movie.view.fav.FavMoviesList"
+        android:label="fragment_fav_movies_list"
+        tools:layout="@layout/fragment_fav_movies_list" />
 </navigation>
