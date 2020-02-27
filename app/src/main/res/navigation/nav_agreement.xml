@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_agreement"
+    app:startDestination="@id/agreementFragment">
+
+    <fragment
+        android:id="@+id/agreementFragment"
+        android:name="com.c_od_e.movie.view.agreement.AgreementFragment"
+        android:label="fragment_agreement"
+        tools:layout="@layout/fragment_agreement">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="mvimovie://agreement" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.c_od_e.movie.view.agreement.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="www.mvimovie.com/privacy/{name}" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="def" />
+    </fragment>
+</navigation>

@@ -42,4 +42,5 @@
         android:name="com.c_od_e.movie.view.note.NoteDialog"
         android:label="dialog_add"
         tools:layout="@layout/dialog_note" />
+    <include app:graph="@navigation/nav_agreement" />
 </navigation>
