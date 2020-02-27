@@ -9,7 +9,11 @@
         android:id="@+id/navigation_search"
         android:name="com.c_od_e.movie.view.search.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_settings"
         android:name="com.c_od_e.movie.view.settings.SettingsFragment"
@@ -19,10 +23,23 @@
         android:id="@+id/navigation_details"
         android:name="com.c_od_e.movie.view.details.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_navigation_details_to_addDialog"
+            app:destination="@id/navigation_note" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_fav"
         android:name="com.c_od_e.movie.view.fav.FavMoviesList"
         android:label="fragment_fav_movies_list"
-        tools:layout="@layout/fragment_fav_movies_list" />
+        tools:layout="@layout/fragment_fav_movies_list" >
+        <action
+            android:id="@+id/action_navigation_fav_to_navigation_search"
+            app:destination="@id/navigation_search" />
+    </fragment>
+    <dialog
+        android:id="@+id/navigation_note"
+        android:name="com.c_od_e.movie.view.note.NoteDialog"
+        android:label="dialog_add"
+        tools:layout="@layout/dialog_note" />
 </navigation>

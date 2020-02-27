@@ -13,6 +13,4 @@ import com.c_od_e.movie.R
 class SearchFragment : Fragment(R.layout.fragment_search) {
 
 
-
-
 }
